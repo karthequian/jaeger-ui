@@ -43,14 +43,14 @@ function getJSON(url, options = {}) {
     }
     return response.text().then(bodyText => {
       let data;
-      let bodyTextFmt;
+      // let bodyTextFmt = "";
       let errorMessage;
       try {
         data = JSON.parse(bodyText);
-        bodyTextFmt = JSON.stringify(data, null, 2);
+        // bodyTextFmt = JSON.stringify(data, null, 2);
       } catch (_) {
         data = null;
-        bodyTextFmt = null;
+        // bodyTextFmt = null;
       }
       if (data && Array.isArray(data.errors) && data.errors.length) {
         errorMessage = data.errors.map(err => getMessageFromError(err, response.status)).join('; ');
@@ -60,13 +60,14 @@ function getJSON(url, options = {}) {
       if (typeof errorMessage === 'string') {
         errorMessage = errorMessage.trim();
       }
-      const error = new Error(`HTTP Error: ${errorMessage}`);
-      error.httpStatus = response.status;
-      error.httpStatusText = response.statusText;
-      error.httpBody = bodyTextFmt || bodyText;
-      error.httpUrl = url;
-      error.httpQuery = typeof query === 'string' ? query : queryString.stringify(query);
-      throw error;
+      data = {};
+      // const error = new Error(`HTTP Error: ${errorMessage}`);
+      // error.httpStatus = response.status;
+      // error.httpStatusText = response.statusText;
+      // error.httpBody = bodyTextFmt || bodyText;
+      // error.httpUrl = url;
+      // error.httpQuery = typeof query === 'string' ? query : queryString.stringify(query);
+      // throw error;
     });
   });
 }

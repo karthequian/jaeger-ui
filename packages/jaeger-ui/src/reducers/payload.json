@@ -1,0 +1,310 @@
+{
+    "data": [
+        {
+            "traceID": "37aabbf8bc90405a",
+            "spans": [
+                {
+                    "traceID": "37aabbf8bc90405a",
+                    "spanID": "3aaf74a9aec2eed5",
+                    "flags": 1,
+                    "operationName": "reviews-v1-987d495c-mksfc.termination",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "37aabbf8bc90405a",
+                            "spanID": "37aabbf8bc90405a"
+                        }
+                    ],
+                    "startTime": 1629265097978320,
+                    "duration": 6646437,
+                    "tags": [
+                        {
+                            "key": "uid",
+                            "type": "string",
+                            "value": "75744a73-7f8e-4628-aca0-5f6ef3f44bc6"
+                        },
+                        {
+                            "key": "node",
+                            "type": "string",
+                            "value": "verica-worker2"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "jaeger"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p1",
+                    "warnings": null
+                },
+                {
+                    "traceID": "37aabbf8bc90405a",
+                    "spanID": "0a8dd95c9b254f66",
+                    "flags": 1,
+                    "operationName": "details-v1-79c697d759-nh7fh.termination",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "37aabbf8bc90405a",
+                            "spanID": "37aabbf8bc90405a"
+                        }
+                    ],
+                    "startTime": 1629265098003481,
+                    "duration": 7618399,
+                    "tags": [
+                        {
+                            "key": "uid",
+                            "type": "string",
+                            "value": "07abd9eb-927d-43e7-89c1-67c2599d7205"
+                        },
+                        {
+                            "key": "node",
+                            "type": "string",
+                            "value": "verica-worker2"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "jaeger"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p1",
+                    "warnings": null
+                },
+                {
+                    "traceID": "37aabbf8bc90405a",
+                    "spanID": "7418599498cafdfe",
+                    "flags": 1,
+                    "operationName": "reviews-v2-6c5bf657cf-dvfrg.termination",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "37aabbf8bc90405a",
+                            "spanID": "37aabbf8bc90405a"
+                        }
+                    ],
+                    "startTime": 1629265097980491,
+                    "duration": 7656947,
+                    "tags": [
+                        {
+                            "key": "uid",
+                            "type": "string",
+                            "value": "7af89b1e-e24d-4807-ace3-4e455c435f75"
+                        },
+                        {
+                            "key": "node",
+                            "type": "string",
+                            "value": "verica-worker2"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "jaeger"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p1",
+                    "warnings": null
+                },
+                {
+                    "traceID": "37aabbf8bc90405a",
+                    "spanID": "714e58c7d30129d1",
+                    "flags": 1,
+                    "operationName": "reviews-v3-5f7b9f4f77-hgq6s.termination",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "37aabbf8bc90405a",
+                            "spanID": "37aabbf8bc90405a"
+                        }
+                    ],
+                    "startTime": 1629265097966266,
+                    "duration": 7683158,
+                    "tags": [
+                        {
+                            "key": "uid",
+                            "type": "string",
+                            "value": "0974140a-3a10-4073-95be-590a8904f326"
+                        },
+                        {
+                            "key": "node",
+                            "type": "string",
+                            "value": "verica-worker2"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "jaeger"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p1",
+                    "warnings": null
+                },
+                {
+                    "traceID": "37aabbf8bc90405a",
+                    "spanID": "6527d62dd4c492c3",
+                    "flags": 1,
+                    "operationName": "productpage-v1-65576bb7bf-8kt9f.termination",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "37aabbf8bc90405a",
+                            "spanID": "37aabbf8bc90405a"
+                        }
+                    ],
+                    "startTime": 1629265097976168,
+                    "duration": 7690220,
+                    "tags": [
+                        {
+                            "key": "uid",
+                            "type": "string",
+                            "value": "b6e61630-55ec-4f14-bc3b-700a9ecb61a6"
+                        },
+                        {
+                            "key": "node",
+                            "type": "string",
+                            "value": "verica-worker2"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "jaeger"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p1",
+                    "warnings": null
+                },
+                {
+                    "traceID": "37aabbf8bc90405a",
+                    "spanID": "37aabbf8bc90405a",
+                    "flags": 1,
+                    "operationName": "drain",
+                    "references": [],
+                    "startTime": 1629265097913060,
+                    "duration": 38166205,
+                    "tags": [
+                        {
+                            "key": "sampler.type",
+                            "type": "string",
+                            "value": "const"
+                        },
+                        {
+                            "key": "sampler.param",
+                            "type": "bool",
+                            "value": true
+                        },
+                        {
+                            "key": "name",
+                            "type": "string",
+                            "value": "verica-worker2"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "jaeger"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p2",
+                    "warnings": null
+                },
+                {
+                    "traceID": "37aabbf8bc90405a",
+                    "spanID": "660c4ae776dfaf9f",
+                    "flags": 1,
+                    "operationName": "ratings-v1-7d99676f7f-rtr2k.termination",
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "37aabbf8bc90405a",
+                            "spanID": "37aabbf8bc90405a"
+                        }
+                    ],
+                    "startTime": 1629265097996853,
+                    "duration": 37632208,
+                    "tags": [
+                        {
+                            "key": "uid",
+                            "type": "string",
+                            "value": "a8039563-87e6-4bfa-b27b-e825e0d8ec02"
+                        },
+                        {
+                            "key": "node",
+                            "type": "string",
+                            "value": "verica-worker2"
+                        },
+                        {
+                            "key": "internal.span.format",
+                            "type": "string",
+                            "value": "jaeger"
+                        }
+                    ],
+                    "logs": [],
+                    "processID": "p1",
+                    "warnings": null
+                }
+            ],
+            "processes": {
+                "p1": {
+                    "serviceName": "pod-watcher",
+                    "tags": [
+                        {
+                            "key": "client-uuid",
+                            "type": "string",
+                            "value": "59ade0de624e5589"
+                        },
+                        {
+                            "key": "hostname",
+                            "type": "string",
+                            "value": "pod-watcher-d8465959f-gb27b"
+                        },
+                        {
+                            "key": "ip",
+                            "type": "string",
+                            "value": "10.244.2.9"
+                        },
+                        {
+                            "key": "jaeger.version",
+                            "type": "string",
+                            "value": "Go-2.29.1"
+                        }
+                    ]
+                },
+                "p2": {
+                    "serviceName": "node-drain",
+                    "tags": [
+                        {
+                            "key": "client-uuid",
+                            "type": "string",
+                            "value": "654e1a4fb17399b2"
+                        },
+                        {
+                            "key": "hostname",
+                            "type": "string",
+                            "value": "node-drain-66kst"
+                        },
+                        {
+                            "key": "ip",
+                            "type": "string",
+                            "value": "10.244.2.14"
+                        },
+                        {
+                            "key": "jaeger.version",
+                            "type": "string",
+                            "value": "Go-2.29.1"
+                        }
+                    ]
+                }
+            },
+            "warnings": null
+        }
+    ],
+    "total": 0,
+    "limit": 0,
+    "offset": 0,
+    "errors": null
+}

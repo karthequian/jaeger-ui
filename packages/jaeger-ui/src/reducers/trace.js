@@ -14,6 +14,7 @@
 
 import _isEqual from 'lodash/isEqual';
 import { handleActions } from 'redux-actions';
+import staticJson from './payload.json';
 
 import { fetchTrace, fetchMultipleTraces, searchTraces } from '../actions/jaeger-api';
 import { loadJsonTraces } from '../actions/file-reader-api';
@@ -36,7 +37,10 @@ function fetchTraceStarted(state, { meta }) {
 
 function fetchTraceDone(state, { meta, payload }) {
   const { id } = meta;
-  const data = transformTraceData(payload.data[0]);
+  if (payload) {
+    console.log("Payload was passed");
+  }
+  const data = transformTraceData(staticJson.data[0]);
   let trace;
   if (!data) {
     trace = { id, state: fetchedState.ERROR, error: new Error('Invalid trace data recieved.') };
@@ -46,6 +50,7 @@ function fetchTraceDone(state, { meta, payload }) {
   const traces = { ...state.traces, [id]: trace };
   return { ...state, traces };
 }
+
 
 function fetchTraceErred(state, { meta, payload }) {
   const { id } = meta;
